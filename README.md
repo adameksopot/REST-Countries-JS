@@ -4,4 +4,5 @@
 4 Zadanie działa ok<br>
 5 Zadanie działa ok<br>
 
-Autor Adam Heinrich<br>
+Autor Adam Heinrich<br><br>
+![image](https://user-images.githubusercontent.com/58732951/125197778-4dcd4200-e25f-11eb-8580-1efa0a350392.png)
