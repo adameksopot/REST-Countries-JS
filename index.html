@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="All.js"></script>
+    <script src="Asc.js"></script>
+    <script src="Dsc.js"></script>
+    <script src="Searchbox.js"></script>
+    <script src="Filter.js"></script>
+    <script src="Summary.js"></script>
+
+
+    <title>Adam H </title>
+
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div>1. <input type="button" value="Wszystkie kraje" onclick="displayAll();" /></div>
+    <div>2. <select onmousedown="this.value='';" onchange="Ascending(this.value);">
+            <option value="">--Kolumny rosnąco--</option>
+            <option value='0'>Nazwa</option>
+            <option value='1'>Waluta</option>
+            <option value='2'>Język</option>
+            <option value='3'>Ludność</option>
+            <option value='4'>Powierzchnia</option>
+        </select>
+        <select onmousedown="this.value='';" onchange="Descending(this.value);">
+            <option value="">--Kolumny malejąco--</option>
+            <option value='0'>Nazwa</option>
+            <option value='1'>Waluta</option>
+            <option value='2'>Język</option>
+            <option value='3'>Ludność</option>
+            <option value='4'>Powierzchnia</option>
+        </select>
+    </div>
+    <div>
+        3. <input id="search" onkeypress="Searchbox()" type="text" placeholder="Fitruj" aria-label="Search">
+    </div>
+    <div>
+        4.
+        <input id="min" type="text" class="txtPost" placeholder="Min" />
+        <input id="max" type="text" class="txtPost" placeholder="Max" />
+        <button onclick="Filter()">Fitruj</button>
+
+    </div>
+    <div>5. <button onclick="Summary()">Podsumowanie danych z API</button></div>
+    <div id="summary"></div>
+    <div id="root"></div>
+
+
+
+</body>
+
+</html>
